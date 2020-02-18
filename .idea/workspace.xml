@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22528b12-b918-43c9-b022-da53956aa58d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="22528b12-b918-43c9-b022-da53956aa58d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,11 +10,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web_source/prd/css/agency.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -37,21 +44,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/web_source/prd/css/agency.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/ggingggang.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="362" />
     <option name="y" value="161" />
     <option name="width" value="1401" />
@@ -75,12 +72,6 @@
               <item name="ggingggang" type="462c0819:PsiDirectoryNode" />
               <item name="web_source" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ggingggang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ggingggang" type="462c0819:PsiDirectoryNode" />
-              <item name="web_source" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -92,6 +83,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web_source/prd" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git\ggingggang\ggingggang\web_source\prd" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\git\ggingggang\ggingggang\web_source\dev" />
       <recent name="C:\git\ggingggang\ggingggang\python" />
@@ -141,11 +135,27 @@
       <option name="project" value="LOCAL" />
       <updated>1581921811613</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="prd 소스 업로드">
+      <created>1581921883893</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581921883893</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="2186" y="223" width="1401" height="754" extended-state="0" />
+    <frame x="362" y="161" width="1401" height="754" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -174,13 +184,21 @@
     <MESSAGE value="폴더별 구분해서 저장하쟝" />
     <MESSAGE value="웹 저장" />
     <MESSAGE value="소스 업로드" />
-    <option name="LAST_COMMIT_MESSAGE" value="소스 업로드" />
+    <MESSAGE value="prd 소스 업로드" />
+    <option name="LAST_COMMIT_MESSAGE" value="prd 소스 업로드" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/python/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_source/prd/css/agency.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
