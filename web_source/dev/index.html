@@ -61,7 +61,7 @@
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">비활성 보안그룹 검색</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">비활성 Tag 자원 검색</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#search_result">검색결과</a>
@@ -75,9 +75,9 @@
   <header class="masthead" id="tophome">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">TSC 운영이관 Excel 산출물 자동화</div>
+        <div class="intro-lead-in">AWS Resource Find No Tag</div>
         <div class="intro-heading text-uppercase">환영합니다.</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Excel 출력하기</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">검색하기</a>
       </div>
     </div>
   </header>
@@ -88,7 +88,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">SERVICES</h2>
-          <h3 class="section-subheading text-muted">TSC 운영이관 Excel 산출물 자동화 설명</h3>
+          <h3 class="section-subheading text-muted">AWS Resource Find No Tag 설명</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -320,8 +320,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Excel 변환 정보</h2>
-          <h3 class="section-subheading text-muted">아래의 정보 입력후 Excel 변환 버튼 클릭.</h3>
+          <h2 class="section-heading text-uppercase">비활성 Tag 자원 검색 정보</h2>
+          <h3 class="section-subheading text-muted">아래의 정보 입력후 검색 버튼 클릭.</h3>
         </div>
       </div>
       <div class="row">
@@ -337,10 +337,10 @@
                   <input class="form-control" id="skey" type="password" minlength="40" maxlength="40" placeholder="Your S key *" required="required" data-validation-required-message="secret key를 입력 해주세요..">
                   <p class="help-block text-danger"></p>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <input class="form-control" id="vpctag" type="text" maxlength="30" placeholder="Your VPC Tag *" required="required" data-validation-required-message="VPC Tag를 입력 해주세요.">
                   <p class="help-block text-danger"></p>
-                </div>
+                </div> -->
                 <div class="form-group">
                   <!-- <input class="form-control" id="region" type="tel" placeholder="Your region *" required="required" data-validation-required-message="Please enter your phone number.">
                   <p class="help-block text-danger"></p> -->
@@ -385,22 +385,12 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" id="filename" type="text" maxlength="30" placeholder="다운 받을 파일 명 *"required="required" data-validation-required-message="파일명을 입력 해주세요.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
                   <!-- <input class="form-control" id="region" type="tel" placeholder="Your region *" required="required" data-validation-required-message="Please enter your phone number.">
                   <p class="help-block text-danger"></p> -->
                   <select class="selectpicker" id="servicelist" multiple data-selected-text-format="count > 3" data-width="100%">
                     <optgroup label="출력 서비스 선택">
-                      <option value="s01" selected>AWS 접속정보</option>
-                      <option value="s02" selected>VPC 구성정보</option>
-                      <option value="s03" selected>EC2 현황정보</option>
-                      <option value="s04" selected>RDS 현황정보</option>
-                      <option value="s05" selected>CloudFront&S3</option>
-                      <option value="s06">Workspace 현황정보</option>
-                      <option value="s07">EFS 현황정보</option>
-                      <option value="s07" selected>AccessKey</option>
+                      <option value="ec2" selected>EC2 Service</option>
+                      <option value="s04" selected>RDS Service</option>
                     </optgroup>
                   </select>
                 </div>
@@ -412,7 +402,7 @@
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Excel 변환</button>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">검색</button>
               </div>
             </div>
           </form>
@@ -430,7 +420,7 @@
             <h3 class="section-subheading text-muted">확인할 서비스를 클릭하여 보기</h3>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="height: 300px; overflow: scroll;">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
@@ -520,15 +510,10 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
+                <h2 class="text-uppercase">EC2 Service 검색 결과</h2>
+                <p class="item-intro text-muted">테이블 복사 가능.</p>
+                <img class="img-fluid d-block mx-auto" src="img/aws_service/ec2_service.png" alt="">
+                <div id="grid"></div>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>

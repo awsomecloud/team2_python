@@ -418,6 +418,12 @@
           <h2 class="section-heading text-uppercase">Excel 변환 정보</h2>
           <h3 class="section-subheading text-muted">아래의 정보 입력후 Excel 변환 버튼 클릭.</h3>
         </div>
+        <label class="btn btn-primary active">
+          <input type="radio" name="comop" id="option1" value="gram" autocomplete="off" checked> GRAM
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="comop" id="option2" value="megazone" autocomplete="off"> MEGAZONE
+        </label>
       </div>
       <div class="row">
         <div class="col-lg-12">
@@ -425,15 +431,19 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
+
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="slackname" type="text" maxlength="30" placeholder="슬랙 체널 ID *"required="required" data-validation-required-message="슬랙 체널 ID.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
                   <input class="form-control" id="akey" type="text" minlength="20" maxlength="20" placeholder="Your A key *" required="required" data-validation-required-message="access key를 입력 해주세요.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
                   <input class="form-control" id="skey" type="password" minlength="40" maxlength="40" placeholder="Your S key *" required="required" data-validation-required-message="secret key를 입력 해주세요..">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="vpctag" type="text" maxlength="30" placeholder="Your VPC Tag *" required="required" data-validation-required-message="VPC Tag를 입력 해주세요.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
@@ -790,6 +800,23 @@
   <script src="js/table_data.js"></script>
   <!-- TOAST TABLE Conf -->
   <script src="js/table_conf.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      // 라디오버튼 클릭시 이벤트 발생
+      $("input:radio[name=comop]").click(function(){
+
+          if($("input[name=comop]:checked").val() == "megazone"){
+              $("input:text[id=slackname]").attr("disabled",false);
+              // radio 버튼의 value 값이 1이라면 활성화
+
+          }else if($("input[name=comop]:checked").val() == "gram"){
+                $("input:text[id=slackname]").attr("disabled",true);
+              // radio 버튼의 value 값이 0이라면 비활성화
+          }
+      });
+    });
+  </script>
 
 </body>
 
