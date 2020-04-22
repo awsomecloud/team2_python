@@ -1,0 +1,15 @@
+{
+    "token": "슬렉 그룹 토큰값",
+    "channels": [
+        {
+        "comment": "예시) 한화63City SG List",
+        "title": "예시) 한화63City SG List",
+        "file_name": "프로젝트명_sg_list.txt",
+        "channel_id": "전달받을 Slack channel ID",
+        "ak_id": "kms 암호화 한 akey",
+        "sk_id": "kms 암호화 한 skey",
+        "region_cd": "ap-northeast-2",
+        "type_cd": "open"
+        }
+    ]
+}
